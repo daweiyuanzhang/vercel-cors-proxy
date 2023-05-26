@@ -21,8 +21,9 @@ app.all('/*', async (req, res) => {
     const proxyParams = parseProxyParameters(req)
     if(!proxyParams.url) {
       return res.status(400).json({
-        "title": "CORS Proxy Error - Required parameter is missing",
-        "detail": "The parameter: url was not provided",
+//         "title": "CORS Proxy Error - Required parameter is missing",
+//         "detail": "The parameter: url was not provided",
+        "message": "Nothing happened"
       }) 
     }
     
